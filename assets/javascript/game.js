@@ -49,12 +49,15 @@ $(document).ready(function() {
             wins++; 
             alert ("Congratulations!!You Won!!!");
             document.getElementById("wins").textContent = wins;//number of wins on screen
+            document.location.reload(); 
         } else if (counter >= target) {
             losses++;
             alert("Unfortunately, You lost!");
             document.getElementById("losses").textContent = losses;//number of lossses on screen
+            document.location.reload();
         } 
-        
+    document.getElementById("wins").textContent = wins;
+    document.getElementById("losses").textContent = losses;
     });
         
 });
